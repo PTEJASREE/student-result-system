@@ -1,0 +1,116 @@
+<html>
+<head>
+<style>
+body{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(90deg, #026a6e 0.4%, #03989e 0 ,#026a6e);
+}
+.topnav {
+padding-top: 1.1%;
+padding-right: 6%;
+overflow: hidden;
+}
+.topnav a {
+float: left;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.35rem;
+}
+.topnav a:hover {
+background-color: #015457 ;
+}
+.topnav a.active {
+color:white;
+}
+.topnav-right {
+float: right;
+}
+input{
+width:250px;
+height:38px;
+border-radius: 3px;
+font-size: 20px;
+border: none;
+margin: 1.5%;
+}
+.btn {
+width:210px;
+background:#222222;
+background-image: -webkit-linear-gradient(top, #222222, #222222);
+background-image: -moz-linear-gradient(top, #222222, #222222);
+background-image: -ms-linear-gradient(top, #222222, #222222);
+background-image: -o-linear-gradient(top, #222222, #222222);
+background-image: linear-gradient(to bottom, #222222, #222222);
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+font-family: Arial;
+color: white;
+font-size: 27px;
+padding: 7px 15px 7px 15px;
+border: none;
+text-decoration: none;
+margin-top: 1.3%;
+}
+select
+{
+width: 250px;
+height: 38px;
+border-radius: 3px;
+font-size: 20px;
+border: none;
+margin: 1.5%;
+}
+.t
+{
+margin-top: 13%;
+margin-right: 4%;
+}
+p{
+color: red;
+font-size: 1.4rem;
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+<div class="topnav-right">
+<a href="admin.jsp">Home</a>
+<a href="addstudentdetail.html">AddStudent</a>
+<a href="insertsm.html">AddGrades</a>
+<a class="active" href="updatesm.html">UpdateGrades</a>
+</div>
+</div>
+<form action="updatesm.jsp" method="POST">
+<div class="t">
+<input type="text" name="regno" placeholder="Registration No.">
+<select name="sem">
+  <option value="1">sem1</option>
+  <option value="2">sem2</option>
+  <option value="3">sem3</option>
+  <option value="4">sem4</option>
+  <option value="5">sem5</option>
+  <option value="6">sem6</option>
+  <option value="7">sem7</option>
+  <option value="8">sem8</option>
+</select>
+<select name="sub">
+  <option value="s1">sub1</option>
+  <option value="s2">sub2</option>
+  <option value="s3">sub3</option>
+  <option value="s4">sub4</option>
+  <option value="s5">sub5</option>
+  <option value="l1">lab1</option>
+  <option value="l2">lab2</option>
+  <option value="l3">lab3</option>
+</select>
+<input type="number" name="marks" placeholder="New Grade">
+<br>
+<button class="btn" type="submit">submit</button>
+</div>
+</form>
+</body>
+</html>

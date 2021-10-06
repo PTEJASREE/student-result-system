@@ -1,0 +1,159 @@
+<html>
+<head>
+<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+</head>
+<body>
+<style>
+.topnav {
+padding-top: 1.1%;
+padding-right: 6%;
+overflow: hidden;
+}
+.topnav a {
+float: left;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.35rem;
+}
+.topnav a:hover {
+background-color: #015457;
+}
+.topnav a.active {
+color: white;
+}
+.topnav-right {
+float: right;
+}
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(90deg, #026a6e 0.4%, #03989e 0, #026a6e);
+}
+input {
+width: 250px;
+height: 38px;
+border-radius: 3px;
+font-size: 18px;
+border: none;
+margin: 1.5%;
+}
+select {
+width: 250px;
+height: 38px;
+border-radius: 3px;
+font-size: 18px;
+border: none;
+margin: 1.5%;
+}
+td {
+font-size: 22px;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-top: 2.5%;
+margin: 0.7%;
+}
+.btn {
+width: 210px;
+background: #222222;
+background-image: -webkit-linear-gradient(top, #222222, #222222);
+background-image: -moz-linear-gradient(top, #222222, #222222);
+background-image: -ms-linear-gradient(top, #222222, #222222);
+background-image: -o-linear-gradient(top, #222222, #222222);
+background-image: linear-gradient(to bottom, #222222, #222222);
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+font-family: Arial;
+color: white;
+font-size: 27px;
+padding: 7px 15px 7px 15px;
+text-decoration: none;
+margin-top: 1.3%;
+border: none;
+}
+</style>
+<div class="topnav">
+<div class="topnav-right">
+<a href="admin.jsp">Home</a>
+<a class="active" href="addstudentdetail.html">AddStudent</a>
+<a href="insertsm.html">AddGrades</a>
+<a href="updatesm.html">UpdateGrades</a>
+</div>
+</div>
+<center>
+<h1>Add Student <i class="fas fa-user-graduate"></i> Details</h1>
+<form name="f1" method="POST" action="insertstudentdetail.jsp">
+<table>
+<tr>
+<td>
+<pre>Enter Registration Number   :</pre>
+</td>
+<td><input type="text" name="regno" placeholder="Ex:190001"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Batch Number          :</pre>
+</td>
+<td> <select name="batch">
+<option value="19">19</option>
+<option value="20">20</option>
+</td>
+</tr>
+<tr>
+<td>
+<pre>Enter Regulation            :</pre>
+</td>
+<td> <select name="regulation">
+<option value="r19"> R19</option>
+<option value="r20">R20</option>
+</select></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Name of the Student   :</pre>
+</td>
+<td><input type="text" name="name" placeholder="Name"></td>
+<tr>
+<td>
+<pre>Enter Father Name of Student:</pre>
+</td>
+<td><input type="text" name="fname" placeholder="Father Name"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Mother Name of Student:</pre>
+</td>
+<td><input type="text" name="mname" placeholder="Mother Name"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Mobile No. of Student :</pre>
+</td>
+<td><input type="text" name="mobile" placeholder="Mobile Number"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Mobile No. of Parent  :</pre>
+</td>
+<td><input type="text" name="pmobile" placeholder="Parent Mobile Number"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Aadhar No. of Student :</pre>
+</td>
+<td><input type="text" name="aadhar" placeholder="Aadhar Card Number"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Blood Group           :</pre>
+</td>
+<td><input type="text" name="bloodgrp" placeholder="Blood Group"></td>
+</tr>
+</table>
+<button class="btn" type="submit" name="button">submit</button>
+</body>
+</html>

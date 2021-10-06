@@ -1,0 +1,146 @@
+<html>
+<head>
+<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+</head>
+<body>
+<style>
+.topnav {
+padding-top: 1.1%;
+padding-right: 6%;
+overflow: hidden;
+}
+.topnav a {
+float: left;
+color: black;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 1.35rem;
+}
+.topnav a:hover {
+background-color: #015457;
+}
+.topnav a.active {
+color: white;
+}
+.topnav-right {
+float: right;
+}
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(90deg, #026a6e 0.4%, #03989e 0, #026a6e);
+}
+input {
+width: 250px;
+height: 38px;
+border-radius: 3px;
+font-size: 18px;
+border: none;
+margin: 1.5%;
+}
+td {
+font-size: 22px;
+}
+h1 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-top: 2.5%;
+margin: 0.7%;
+}
+.btn {
+width: 210px;
+background: #222222;
+background-image: -webkit-linear-gradient(top, #222222, #222222);
+background-image: -moz-linear-gradient(top, #222222, #222222);
+background-image: -ms-linear-gradient(top, #222222, #222222);
+background-image: -o-linear-gradient(top, #222222, #222222);
+background-image: linear-gradient(to bottom, #222222, #222222);
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+font-family: Arial;
+color: white;
+font-size: 27px;
+padding: 7px 15px 7px 15px;
+border: none;
+text-decoration: none;
+margin-top: 1.3%;
+}
+</style>
+<div class="topnav">
+<div class="topnav-right">
+<a href="admin.jsp">Home</a>
+<a href="addstudentdetail.html">AddStudent</a>
+<a class="active" href="insertsm.html">AddGrades</a>
+<a href="updatesm.html">UpdateGrades</a>
+</div>
+</div>
+<center>
+<h1>Add Student Grades</h1>
+<form name="f1" method="POST" action="insertsm.jsp">
+<table>
+<tr>
+<td>
+<pre>Enter Reg Number:</pre>
+</td>
+<td><input type="text" name="regno" placeholder="Regno."></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sem Number:</pre>
+</td>
+<td> <input type="text" name="sem" placeholder="sem"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sub1 Grade:</pre>
+</td>
+<td><input type="number" name="s1" placeholder="s1"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sub2 Grade:</pre>
+</td>
+<td><input type="number" name="s2" placeholder="s2"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sub3 Grade:</pre>
+</td>
+<td><input type="number" name="s3" placeholder="s3"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sub4 Grade:</pre>
+</td>
+<td><input type="number" name="s4" placeholder="s4"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Sub5 Grade:</pre>
+</td>
+<td><input type="number" name="s5" placeholder="s5"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Lab1 Grade:</pre>
+</td>
+<td><input type="number" name="l1" placeholder="l1"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Lab2 Grade:</pre>
+</td>
+<td><input type="number" name="l2" placeholder="l2"></td>
+</tr>
+<tr>
+<td>
+<pre>Enter Lab3 Grade:</pre>
+</td>
+<td><input type="number" name="l3" placeholder="l3"></td>
+</tr>
+</table>
+<button class="btn" type="submit" name="button">submit</button>
+</body>
+</html>

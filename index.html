@@ -1,0 +1,109 @@
+<html>
+<head>
+<script src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+</head>
+<style>
+body {
+padding: 1.5% 4% 0;
+height: 100%;
+background: linear-gradient(90deg, #03989e 31%, #222222 0);
+}
+h1{
+color: #03989e;
+font-size: 2.3rem;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+h3 {
+color: #03989e;
+font-size: 1.8rem;
+}
+img {
+float: left;
+margin-left: 20%;
+margin-top: 6%;
+height: 430px;
+width: 320px;
+border-radius: 5px;
+}
+.admin {
+position: absolute;
+top: 46%;
+right: 33%;
+}
+.student {
+position: absolute;
+top: 66%;
+right: 33%;
+}
+.teacher {
+position: absolute;
+top: 56%;
+right: 33%;
+padding-left: 5%;
+}
+.btn {
+background: #03989e;
+background-image: -webkit-linear-gradient(top, #03989e, #03989e);
+background-image: -moz-linear-gradient(top, #03989e, #03989e);
+background-image: -ms-linear-gradient(top, #03989e, #03989e);
+background-image: -o-linear-gradient(top, #03989e, #03989e);
+background-image: linear-gradient(to bottom, #03989e, #03989e);
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+font-family: Arial;
+color: #000000;
+font-size: 27px;
+padding: 5px 33px 5px 25px;
+border: solid #03999e 2px;
+text-decoration: none;
+}
+.btn1 {
+background: #03989e;
+background-image: -webkit-linear-gradient(top, #03989e, #03989e);
+background-image: -moz-linear-gradient(top, #03989e, #03989e);
+background-image: -ms-linear-gradient(top, #03989e, #03989e);
+background-image: -o-linear-gradient(top, #03989e, #03989e);
+background-image: linear-gradient(to bottom, #03989e, #03989e);
+-webkit-border-radius: 7;
+-moz-border-radius: 7;
+border-radius: 7px;
+font-family: Arial;
+color: #000000;
+font-size: 27px;
+padding: 5px 15px 5px 15px;
+border: solid #03999e 2px;
+text-decoration: none;
+}
+@media (max-width:1058px) {
+img {
+display: none;
+}
+}
+hr{
+width: 32%;
+border-top: 4px dotted #03999e;
+position: absolute;
+right: 34%;
+border-bottom: none;
+}
+</style>
+<body>
+<center>
+<h1>ABC COLLEGE</h1>
+<h3>Department of CSE</h3>
+<hr>
+</center>
+<img src="RESULTS.png" alt="">
+<form action="adminlogin.html" method="post">
+<button class="admin btn" type="submit" name="button">ADMIN <i class="fas fa-user-lock"></i></button>
+</form>
+<form action="teacherlogin.html" method="post">
+<button class=" teacher btn1" type="submit" name="submit">TEACHER <i class="fas fa-user"></i></button>
+</form>
+<form action="sd.jsp" method="post">
+<button class=" student btn1" type="submit" name="submit">STUDENT <i class="fas fa-user-graduate"></i></button>
+</form>
+</body>
+</html>
